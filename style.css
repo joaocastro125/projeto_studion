@@ -4,19 +4,26 @@
 
 * {
   box-sizing: border-box;
-
+  
+  
+  
 }
 
 :root {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+
+  --default-padding:1rem;
   --color-primary: #ffc500;
+  color: #000;
+ 
 }
 
 body {
   margin: 0;
-  background-color: #000;
-  color: #fff;
+  padding-top: 7.75rem;
+  
+  
 }
 
 .navbar {
@@ -27,10 +34,13 @@ body {
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 9fr;
+  align-items: center;
+  width: 100vw;
+  height: 10rem;
   padding: 0 1rem;
   width: 100vw;
   color: #fff;
-  background-color: #000;
+ 
 }
 
 ul {
@@ -41,9 +51,9 @@ ul {
 
 }
 
-li {
+/* li {
   margin-right: 0.625rem;
-}
+} */
 
 .navbar__links li {
   margin-right: 3rem;
@@ -80,8 +90,9 @@ li {
 .logo-studion__subtitle {
 
   font-size: 0.875rem;
-  text-align: right;
-  font-weight: 400;
+  /* text-align: right; */
+  font-weight: 300;
+
 
 }
 
@@ -94,3 +105,20 @@ li {
   font-weight: 300;
   color: white;
 }
+
+#slider{
+ 
+ background-color: #000;
+ color: #fff;
+
+  
+}
+.slider{
+  height: calc(100vh-7.75rem);
+  position: relative;
+  background-image: url('./img/banner.jpg');
+
+}
+
+
+  
