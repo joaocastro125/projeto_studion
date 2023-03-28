@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
@@ -9,6 +10,7 @@
 :root {
   --color-primary: #ffc500;
   --color-text: #fff;
+  --color-copy: #333;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
@@ -86,7 +88,7 @@ ul {
 
 .slide {
   position: relative;
-
+  height: calc(100vh - 7.75rem);
 }
 
 .slide__background-image {
@@ -105,7 +107,7 @@ ul {
 .slide__copy h6 {
   font-size: 0.9375rem;
   position: relative;
-  bottom: 130px;
+  bottom: 5rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1875rem;
@@ -120,56 +122,6 @@ ul {
 
 .slide__copy h2 span {
   display: block;
-}
-
-.btn {
-  cursor: pointer;
-  padding: 1rem 2.5rem;
-  border: 0.125rem solid #fff;
-  border-radius: 5rem;
-  background-color: var(--color-primary);
-  font-size: 0.9375rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: 0.3s all ease;
-}
-
-
-.btn:hover,
-.btn:active,
-.btn:focus {
-  border-color: var(--color-primary);
-  background: unset;
-  color: #000;
-}
-
-
-.btn__menu {
-  cursor: pointer;
-  padding: 1rem 2.5rem;
-  border: 0.125rem solid #fff;
-  border-radius: 5rem;
-  color: var(--red);
-  background: unset;
-  font-size: 0.9375rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: 0.3s all ease;
-}
-
-
-.btn__menu:hover,
-.btn__menu:active,
-.btn__menu:focus {
-  border-color: var(--color-primary);
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
-
-.btn--institucional{
-  border-color: var(--color-primary);
-  
 }
 
 
@@ -239,12 +191,14 @@ ul {
   color: #000;
 }
 
-
+.btn--institutional {
+  background-color: var(--color-primary);
+  color: #fff;
+}
 
 .btn--institutional:hover {
   color: var(--color-copy);
   background: unset;
-  box-shadow: 0 1rem 1rem #0006; /* x, y, blur, cor */
 }
 
 
@@ -259,7 +213,7 @@ ul {
 
 
 .quote{
-  background-image: url("../css/img/parallax.jpg");
+  background-image: url("./img/parallax.jpg");
   background-attachment: fixed; /* propriedade define se uma imagem de plano de fundo rola com o restante da página ou é fixa */
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,6 +263,7 @@ ul {
   border-color: var(--color-copy);
   background: unset;
 }
+
 .footer{
   background-color: #000;
   color: #fff;
@@ -401,4 +356,72 @@ button{
 .footer p {
   margin: 2.5rem 0;
 }
+
+.btn {
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  border: 0.125rem solid #fff;
+  border-radius: 5rem;
+  color: var(--color-primary);
+  background: unset;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn--institutional,
+.btn--contact {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn:hover, .btn:active, .btn:focus, .btn--institutional, .btn--contact, .btn--institucional--2 {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+}/* x, y, blur, cor */
+
+.btn--institucional--2{
+  border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.btn--institucional--2:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+.btn--contact:hover {
+  color: #fff;
+}
+
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset;
+}
+
+
+/* .btn {
+  border: 0.125rem solid #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  position: relative;
+  color: var(--color-primary);
+  background: unset;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+   margin-bottom: 20rem; 
+} 
+/*
+
+
+
 
