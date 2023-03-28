@@ -17,6 +17,14 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
+}
+
+html  
+header,
+main,
+footer{
+  overflow: hidden;
 }
 
 ul {
@@ -59,6 +67,11 @@ ul {
 .navbar__links a:hover {
   color: var(--color-primary);
 }
+.navbar__links a.active {
+  color: var(--color-primary);
+}
+
+
 
 .logo-studion {
   font-size: 2.375rem;
@@ -71,6 +84,10 @@ ul {
 .logo-studion__subtitle {
   font-size: 0.875rem;
   font-weight: 300;
+}
+.logo-studion a {
+  text-decoration: none;
+  color: white;
 }
 
 .copy--primary {
@@ -139,6 +156,100 @@ ul {
 .contact{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.contact__info{
+  padding: 4rem 0 8rem;
+}
+.contact__info__container{
+  float: right;
+  padding-right: 7.125rem;
+  
+}
+
+.contact h3{
+  margin: 0;
+  margin-bottom: 1.875rem;
+  font-size: 1.5625rem;
+}
+.contact__info h3:nth-of-type(2) {
+  margin-top: 3.75rem;
+}
+
+
+.contact__info span{
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  gap: 0.625rem;
+  font-size: 1rem;
+  align-items: center;
+  font-family: 'roboto';
+  font-weight: 700;
+  line-height: 1.6875rem  ;
+  color: #333;
+
+}
+
+.contact__info i{
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.contact__form{
+  background-color: #000;
+  color: #FFF;
+}
+
+.contact__form__container{
+  padding-left: 114px;
+}
+
+.contact__info, .contact__form{
+  padding: 4rem 0;
+
+}
+.contact__form__container{
+  width: 540px;
+}
+.contact h3{
+  margin: 0;
+  margin-bottom: 1.875rem;
+  line-height: 1.5625rem; 
+} 
+.contact__form label{
+  font-weight: 700;
+}
+
+.contact__form input{
+  width: 100%;
+  margin-bottom: 1.875rem;
+  padding: 0.5rem 0;
+  background-color: unset;
+  border: unset;
+  border-bottom: 0.06rem solid #fff;
+  font-size: 1.5rem;
+}
+
+.btn--contact{
+  float: right;
+ 
+}
+.btn:hover, .btn:active, .btn:focus, .btn--institutional, .btn--contact{
+  border-color: var(--color-primary);
+  background-color: unset;
+  color: var(--color-text);
+}
+.btn{
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s all ease;
+  background: var(--color-primary)
+  
+
+
 }
 
 .footer__form {
