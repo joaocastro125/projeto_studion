@@ -1,12 +1,33 @@
-$(document).ready(function(){
-    
-        const slickOptions={
-            dots:false,
-            autoplay:true,
-            prevArrow:'<button type="button" class="slick-prev slider__prev-arrow">Previous</button>',
-            nextArrow:'<button type="button" class="slick-prev slider__next-arrow">Previous</button>'
+$(document).ready(() => {
+    const slickOptions = {
+      autoplay: true,
+      dots: false,
+      prevArrow:
+        '<button type="button" class="slick-prev slider__prev-arrow">Previous</button>;',
+      nextArrow:
+        '<button type="button" class="slick-next slider__next-arrow">Next</button>;'
+    };
+    const counterOptions = {
+      delay: 20,
+      time: 2000
+    }
+    $('.slider').slick(slickOptions);
+});
+// s
+$('.counter__number').counterUp(counterOptions);
+$('#btn-footer').on('click', () => {
+  const email = $('#email').val();
+  const emailOptions = {
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'contato@studion.com',
+    From : email,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  };
+
+  Email.send(emailOptions).then(message => alert(message));
+});
 
 
-        };
-     $('.slider').slick(slickOptions)
-    });
